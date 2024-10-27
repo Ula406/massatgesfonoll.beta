@@ -41,3 +41,5 @@ function updateCart() {
 
     document.getElementById('total').innerText = `Total: ${total.toFixed(2)}€`;
 }
+
+updateCart();
