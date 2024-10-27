@@ -152,6 +152,12 @@ main p{
   h2, p { margin-top: 1em }
 }
 
+.video-container iframe {
+  width: 95%;
+  height: 350px; /* Aquesta alçada es pot ajustar segons les teves preferències */
+  border: none; /* Opcional: elimina el contorn dels iframes */
+}
+
 .card{
   margin: 0 auto;
   padding: 2em;
