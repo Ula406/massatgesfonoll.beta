@@ -153,16 +153,30 @@ main p{
 }
 
 .video-container {
-  background: #333;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
 }
 
-video {
-  display: block;
+/* Estil per a cada vídeo */
+.video {
+  flex: 1 1 300px; /* Amplada mínima de 300px, expansible segons la pantalla */
+  max-width: 480px; /* Amplada màxima */
+}
+
+iframe {
   width: 100%;
-  height: auto;
+  height: 50px; /* Ajusta l'altura segons l'amplada */
+  border: none;
+}
+
+/* Responsiu per pantalles petites */
+@media (max-width: 768px) {
+  .video {
+      flex: 1 1 50%; /* Fa que ocupi tota l’amplada de la pantalla */
+  }
 }
 
 .card{
