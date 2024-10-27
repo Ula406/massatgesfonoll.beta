@@ -162,7 +162,6 @@ main p{
 
 /* Estil per a cada vídeo */
 .video {
-  flex: 1 1 400px; /* Amplada mínima de 300px, expansible segons la pantalla */
   max-width: 480px; /* Amplada màxima */
   border-radius: 15px;
 }
