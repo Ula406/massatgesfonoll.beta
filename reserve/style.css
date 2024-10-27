@@ -7,6 +7,120 @@
   --accent-clr: #5e63ff;
   --secondary-text-clr: #b0b3c1;
 }
+
+/* Contenidor del formulari */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.reserve-button{
+  max-width: 400px;
+  padding: 30px;
+  background-color: #f4f4f9;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: auto;
+  width: auto;
+  font-size: large;
+}
+
+.textarea{
+  background-color: #f0e9ff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.select{
+  border-radius: 20px;
+  background-color: #f0e9ff;
+  border-color: none;
+}
+
+/* Títol del formulari */
+form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+form p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Contenidor dels camps d'entrada amb icones */
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0e9ff;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Icona dins del camp d'entrada */
+.input-container i {
+  font-size: 18px;
+  color: #6b46c1;
+  padding: 0 10px;
+}
+
+/* Camps d'entrada */
+.input-container input {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Botó de submissió */
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #6b46c1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Hover per al botó de submissió */
+form input[type="submit"]:hover {
+  background-color: #5a39a3;
+}
+
+/* Enllaç de registre */
+form .register-link {
+  font-size: 14px;
+  color: #6b46c1;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+form .register-link:hover {
+  text-decoration: underline;
+}
+
 *{
   margin: 0;
   padding: 0;

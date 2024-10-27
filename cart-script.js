@@ -31,7 +31,7 @@ function updateCart() {
     let total = 0;
     cart.forEach((item, index) => {
         const cartItem = document.createElement('div');
-        cartItem.innerHTML = `${item.product} - ${item.price}€ <button onclick="removeFromCart(${index})">Eliminar</button>`;
+        cartItem.innerHTML = `${item.product} - ${item.price}€ <button style="background-color: black; color: white; cursor: pointer; border-radius: 10px; padding: 5px; cursor: url('cursors/radio_button_checked_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.svg'), auto; /* Utilitza la imatge personalitzada */ onclick="removeFromCart(${index})">Eliminar</button>`;
         cartContainer.appendChild(cartItem);
         total += item.price;
     });
