@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERROR</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carregant...</title>
+  <style>
+    /* Estil per a la roda de càrrega */
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid #3498db;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 2s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Animació de gir */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
-    <h2>Sembla que hi ha hagut algun problema amb els servidors... estem intentant arreglar-ho.</h2>
-    <p>La informació s'ha processat de manera incorrecta. Si us plau, torna a intentar en un altre moment.</p><a href.windows.location="https://ula406.github.io/massatgesfonoll.beta/HOME/index.html"> Go Home</a>
-    <iframe src="https://drive.google.com/file/d/14dyVBHqDLO8CBWjdDZ3SyzOMSepgj3pY/preview">
-</div>
+  <div class="loader"></div>
+  <script>
+    // Funció per redirigir després de 3 segons
+    setTimeout(function() {
+      window.location.href = "https://ula406.github.io/massatgesfonoll.beta/HOME/index.html"; // Canvia aquesta URL per la teva destinació
+    }, 8500); // 3000 mil·lisegons = 3 segons
+  </script>
 </body>
 </html>
