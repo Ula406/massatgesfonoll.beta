@@ -78,3 +78,8 @@ allInputs.forEach(input => {
     }
   })
 })
+
+// Al fitxer validation.js o en una etiqueta <script>
+document.getElementById("back-button").addEventListener("click", function() {
+  window.history.back(); // Redirigeix a la pàgina anterior
+});
