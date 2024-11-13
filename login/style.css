@@ -92,6 +92,16 @@ h1{
   font-weight: 900;
   text-transform: uppercase;
 }
+
+#go-back {
+  transition: transform 0.5s ease-in-out; /* Afegim transició suau */
+}
+
+/* Quan el cursor passa per sobre de l'SVG */
+#go-back:hover {
+  transform: rotate(360deg); /* Rotació de 360 graus */
+}
+
 form{
   width: min(400px, 100%);
   margin-top: 20px;

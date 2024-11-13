@@ -24,13 +24,14 @@ body{
   grid-template-columns: auto 1fr;
 }
 #sidebar{
+  align-items: center;
   box-sizing: border-box;
   height: 100vh;
   width: 250px;
   padding: 5px 1em;
   background-color: var(--base-clr);
   border-right: 1px solid var(--line-clr);
-
+  z-index: 100000;
   position: sticky;
   top: 0;
   align-self: start;
@@ -62,7 +63,16 @@ ul li{
   border-radius: 10px;
   padding: 5px;
   cursor: url('cursors/radio_button_checked_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.svg'), auto; /* Utilitza la imatge personalitzada */
+  transition: all 0.25s ease;
+  z-index: 1; /* Posició inicial del botó */
 }
+
+/* Efecte quan el cursor passa per sobre */
+.shop-buttons:hover {
+  transform: scale(1.5); /* Augmenta la mida del botó */
+  z-index: 9999; /* Porta el botó a la capa més alta */
+}
+
 
 .button {
   background-color: black;
@@ -71,6 +81,14 @@ ul li{
   border-radius: 10px;
   padding: 20px;
   cursor: url('cursors/radio_button_checked_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.svg'), auto; /* Utilitza la imatge personalitzada */
+  transition: all 0.55s ease;
+  z-index: 1; /* Posició inicial del botó */
+}
+
+/* Efecte quan el cursor passa per sobre */
+.button:hover {
+transform: scale(1.50); /* Augmenta la mida del botó */
+z-index: 9999; /* Porta el botó a la capa més alta */
 }
 
 #sidebar.close{
