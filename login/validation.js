@@ -22,6 +22,9 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     error_message.innerText  = errors.join(". ")
   }
+  else{
+    document.cookie = `email=${email_input.value}`;
+    windows.location.href = "https://ula406.github.io/massatgesfonoll.beta/congratulations.html" }
 })
 
 function getSignupFormErrors(firstname, email, password, repeatPassword){
