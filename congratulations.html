@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="webpage.js" defer></script>
   <script type="text/javascript">
-    let nom = document.cookie
-    alert(nom);
+    document.addEventListener("DOMContentLoaded", function(){
+      let nom = document.cookie
+      let pNom = document.getElementById("pNom");
+      pNom.innerHTML=nom;
+    });    
   </script>
   <link rel="icon" href="imatges/favicon.png" type="image/png">
 </head>
@@ -54,13 +57,13 @@
     </ul>
   </nav>
   <main>
-      <div style="width: 95%" class="card">
+      <div style="width: 95%; margin: 20px;" class="card">
         <h2>ENHORABONA!</h2>
         <p>Has inciciat sessió correctament!</p>
       </div>
-      <div>
+      <div style="width: 95%; margin: 20px" class="card">
         <h1>Sessió Actual:</h1>
-        <p>`email=${email_input.value}`</p>
+        <span id="pNom"></span>
       </div>
   </main>
 </body>

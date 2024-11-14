@@ -16,6 +16,7 @@ html{
   line-height: 1.5rem;
 }
 body{
+  padding-top: 40px;
   min-height: 100vh;
   min-height: 100dvh;
   background-color: var(--base-clr);
@@ -73,6 +74,29 @@ ul li{
   z-index: 9999; /* Porta el botó a la capa més alta */
 }
 
+.text-top-right {
+  gap: 5px;
+  display: flex;
+  align-items: center; /* Centra verticalment */
+  justify-content: center; /* Centra horitzontalment */
+  align-items: center;
+  transition: all 0.25s ease;
+  z-index: 1; /* Posició inicial del botó */
+  position: absolute;
+  top: 10px; /* Ajusta aquesta distància segons et convingui */
+  right: 10px; /* Ajusta aquesta distància segons et convingui */
+  color: white; /* Color del text */
+  background-color: rgba(0, 0, 0, 0.5); /* Fons amb opacitat per fer-lo més llegible */
+  padding: 10px; /* Espai intern */
+  border-radius: 15px; /* Canto rodó, opcional */
+  font-size: 16px; /* Mida del text */
+  z-index: 1000; /* Assegura que aparegui a sobre d'altres elements */
+}
+
+.text-top-right:hover {
+  transform: scale(1.15); /* Augmenta la mida del botó */
+  z-index: 9999; /* Porta el botó a la capa més alta */
+}
 
 .button {
   background-color: black;

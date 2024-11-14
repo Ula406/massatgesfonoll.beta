@@ -22,8 +22,8 @@ form.addEventListener('submit', (e) => {
     error_message.innerText  = errors.join(". ")
   }
   else{
-    document.cookie = `email=${email_input.value}`;
-    window.location.href = "https://ula406.github.io/massatgesfonoll.beta/congratulations.html" }
+    document.cookie = `email=${email_input.value}; path=/; Secure; SameSite=Strict`;
+    window.location.href = "/congratulations.html" }
 })
 
 function getSignupFormErrors(firstname, email, password, repeatPassword){
