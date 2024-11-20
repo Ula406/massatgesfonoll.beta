@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carregant...</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
     /* Estil per a la roda de càrrega */
     .loader {
-      border: 16px solid #f3f3f3;
-      border-top: 16px solid #3498db;
+      border: 16px solid black;
+      border-top: 16px solid white;
       border-radius: 50%;
       width: 80px;
       height: 80px;
@@ -24,15 +26,51 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
+    body {
+      background-color: black;
+    }
+
+    .typewriter {
+      top: 50%;
+      left: 50%;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      border-right: 2px solid #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0; /* Comencem amb ample 0 */
+      animation: typewriter 4s steps(30, end) 2s forwards, blink-caret 0.7s step-end infinite 2s;
+    }
+
+    .text {
+        display: inline-block; /* Permet l'animació amb "width" */
+    }
+
+    /* Efecte de màquina d'escriure */
+    @keyframes typewriter {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    /* Efecte del cursor parpellejant */
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: #ffffff; }
+    }
   </style>
 </head>
 <body>
+  <div class="typewriter">
+    <span class="text">Estem processant la informació...</span>
+  </div>
   <div class="loader"></div>
   <script>
     // Funció per redirigir després de 3 segons
     setTimeout(function() {
       window.location.href = "https://ula406.github.io/massatgesfonoll.beta/reserve/false-confirmation.html"; // Canvia aquesta URL per la teva destinació
-    }, 43500); // 13500 mil·lisegons = 13.5 segons
+    }, 40500); // 4500 mil·lisegons = 4.5 segons
   </script>
 </body>
 </html>

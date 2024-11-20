@@ -7,6 +7,63 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="webpage.js" defer></script>
   <link rel="icon" href="imatges/favicon.png" type="image/png">
+  <style>
+    body {
+      padding: 20px; /* Evitem que el text toqui exactament les vores */
+    }
+
+    .typewriter {
+      top: 50%;
+      left: 50%;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      border-right: 2px solid #ffffff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0; /* Comencem amb ample 0 */
+      animation: typewriter 4s steps(30, end) 2s forwards, blink-caret 0.7s step-end infinite 2s;
+      white-space: normal; /* Permet el trencament de línia */
+      word-wrap: break-word; /* Divideix les paraules si són massa llargues */
+    }
+
+    .text {
+        display: inline-block; /* Permet l'animació amb "width" */
+        line-height: 1.6; /* Incrementa l'espai entre línies */
+
+    }
+
+    /* Efecte de màquina d'escriure */
+    @keyframes typewriter {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    /* Efecte del cursor parpellejant */
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: #ffffff; }
+    }
+    #output {
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            line-height: 1.5; /* Ajusta l'altura de línia si vols més espai entre línies */
+        }
+
+        .fade-in {
+            display: inline-block;
+            opacity: 0;
+            transition: opacity 2s ease; /* Controla la durada i la suavitat */
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+    
+    #output {
+      text-align: left;
+    }
+    </style>
 </head>
 <body>
   <nav id="sidebar">
@@ -50,23 +107,35 @@
     </ul>
   </nav>
   <main>
-    <div style="width: 95%;" class="card">
-      <h2>Història</h2>
-      <p>Situat en una tranquil·la cantonada d’un poble pintoresc, Massatges Fonoll és un refugi per a aquells que busquen alleugerir l'estrès del dia a dia. Amb una filosofia centrada en el benestar i la cura personal, aquesta empresa crea un ambient acollidor i tranquil que convida a l'autocura i la relaxació.
-        El local, decorat amb tonalitats suaus i materials naturals, transmet una sensació de calidesa i harmonia. Al moment d'entrar, els clients són rebuts per una suau aroma d’olis essencials i la melodia d’una música suau que flota a l'aire. Les parets, adornades amb fotografies de paisatges naturals, evoquen una connexió amb la natura, essencial per a l'experiència de Massatges Fonoll. Cada detall es pensa curosament per oferir un entorn de calma i serenor.
-        Massatges Fonoll ofereix una àmplia gamma de serveis dissenyats per satisfer les necessitats de cada client. Des de massatges tradicionals fins a teràpies més innovadores, cada tractament és realitzat per professionals formats que utilitzen tècniques especialitzades per ajudar a alliberar tensions i promoure la salut física i mental. El massatge terapèutic, per exemple, es centra en alleugerir el dolor muscular i millorar la circulació, mentre que el massatge de relaxació busca proporcionar una escapada del ritme frenètic de la vida moderna.
-        Una de les característiques distintives de Massatges Fonoll és la seva dedicació a la personalització dels serveis. Abans de cada sessió, es realitza una breu consulta per entendre les necessitats específiques de cada client, permetent adaptar el massatge a les seves preferències. Aquesta atenció al detall fa que cada experiència sigui única i satisfactòria, cosa que porta a un alt nivell de fidelització entre els clients.
-        A més, Massatges Fonoll incorpora l’ús d’ingredients naturals en les seves teràpies. Els olis essencials utilitzats durant els massatges són de qualitat superior i es seleccionen en funció de les necessitats individuals de cada client. La combinació de tècniques de massatge i aromateràpia potencia els efectes relaxants i revitalitzants del tractament, proporcionant una sensació de benestar total.
-        La sostenibilitat és també un dels pilars fonamentals de Massatges Fonoll. L'empresa utilitza materials ecològics en la decoració del local i promou pràctiques respectuoses amb el medi ambient. A més, col·labora amb proveïdors locals per garantir que els productes utilitzats siguin de la màxima qualitat i sostenibilitat.
-        Amb el pas del temps, Massatges Fonoll es consolida com un referent al barri. Els clients valoren no només la qualitat dels serveis, sinó també l’atenció personalitzada i l’ambient acollidor que fa que cada visita sigui una experiència memorable. Així, Massatges Fonoll esdevenen un espai on la gent pot escapar de l'estrès diari i reconnectar amb si mateixa, un veritable oasi de relaxació.
-        La popularitat de Massatges Fonoll continua creixent, i amb ella, la diversitat de serveis que ofereix. Amb el temps, l'empresa decideix introduir noves tècniques i teràpies que responen a les demandes dels clients i als últims avenços en el camp del benestar. Així, s’incorporen teràpies com el massatge en sec, que utilitza tècniques de fricció i pressió sense l’ús d’olis, i el massatge prenatal, dissenyat específicament per a dones embarassades, que ajuda a alleugerir les tensions i a promoure la relaxació.
-        Mentre els clients entren i surten del local, es nota un ambient de satisfacció i tranquil·litat. La fidelització dels clients es tradueix en un boca-orella efectiu, i molts nous visitants descobreixen Massatges Fonoll gràcies a les recomanacions dels seus amics i familiars. La relació de confiança que es crea entre els professionals del centre i els clients esdevé un dels actius més valuosos de l'empresa.
-        A més, Massatges Fonoll no només se centra en els massatges. L’empresa decideix organitzar tallers i xerrades sobre benestar i autocura, que aborden temes com la importància de la relaxació, l’alimentació saludable i les tècniques de respiració. Aquestes activitats no només ofereixen informació valuosa, sinó que també fomenten la creació d’una comunitat al voltant del benestar.
-        Amb el pas del temps, Massatges Fonoll s’adiu a les noves tecnologies. L'empresa desenvolupa una plataforma en línia que permet als clients reservar cita fàcilment, així com accedir a continguts exclusius, com vídeos de tècniques de relaxació i consells per a l'autocura. Aquesta iniciativa no només facilita la gestió de cites, sinó que també ajuda a mantenir els clients compromesos amb la seva salut i benestar.
-        La missió de Massatges Fonoll és clara: proporcionar un espai on els clients puguin desconnectar de les seves preocupacions quotidianes i reconnectar amb ells mateixos. Els professionals del centre continuen formant-se i actualitzant-se en tècniques noves per assegurar que cada massatge sigui una experiència única i revitalitzant. La formació contínua és un element essencial, ja que l'empresa es compromet a oferir només el millor als seus clients.
-        Amb el temps, Massatges Fonoll esdevé un referent no només al barri, sinó en tota la regió. Clients que venen de llocs llunyans per gaudir de les seves teràpies reconeixen l'impacte positiu que el centre té en la seva vida. La gent comença a parlar de Massatges Fonoll com un espai on el cos i la ment poden trobar l’equilibri necessari per afrontar els desafiaments del dia a dia.
-        Massatges Fonoll s'instal·la com un veritable oasi de relaxació i benestar. La seva dedicació a l'autocura, la sostenibilitat i la creació d'un ambient acollidor i tranquil són els ingredients clau que converteixen aquesta empresa en un destí desitjat per aquells que busquen moments de pau en un món cada cop més accelerat.
-        Amb una visió clara cap al futur, Massatges Fonoll es compromet a continuar evolucionant, adaptant-se a les necessitats dels seus clients i mantenint-se a l'avantguarda del sector del benestar. L'objectiu és clar: seguir sent un espai on la relaxació, la salut i la felicitat es troben en perfecta harmonia.</p>
+    <div class="card">
+      <div id="output"></div>
+      <script>
+          const text = "Situat en una cantonada tranquil·la d'un poble encantador, Massatges Fonoll és un oasi enmig de l'enrenou de la vida quotidiana. Guiat per principis en què es prioritza el benestar i la cura personal, aquest establiment aporta calidesa a l'espai amb hospitalitat i tranquil·litat, convidant a la relaxació i a la protecció del jo. L'espai, decorat amb tonalitats suaus i materials naturals, emana calidesa i harmonia. L'aroma suau d'olis essencials, combinat amb la serenitat de la música suau que sona, rep els clients a l'entrada. Les seves parets estan adornades amb fotografies de paisatges naturals, mostrant un cert respecte per la natura, que és part de Massatges Fonoll. Cada detall serveix per crear una atmosfera de tranquil·litat i pau.  Massatges Fonoll ofereix una àmplia gamma de serveis adaptats a les necessitats úniques de cada client, des de massatges tradicionals fins a teràpies més innovadores. Cada tractament es realitza de manera professional amb tècniques especials per alliberar tensions i afavorir la salut física i mental. Per exemple, els massatges terapèutics alleugereixen el dolor muscular millorant la circulació sanguínia, mentre que els massatges de relaxació serveixen com a una escapada del frenètic ritme de la vida moderna.  Alguns dels punts forts de Massatges Fonoll estan relacionats amb la personalització dels serveis. Abans de cada sessió, es realitza una petita consulta per entendre què cerca cada client, adaptant així el massatge a les seves preferències. És en aquests detalls on cada experiència esdevé única i gratificant, la qual cosa genera un alt nivell de fidelització dels clients.  A més, Massatges Fonoll incorpora elements naturals en els seus tractaments. Els olis essencials utilitzats durant un massatge són de la millor qualitat i es trien segons les necessitats de cada client. La combinació de tècniques de massatge amb aromateràpia millora l'efecte relaxant i revitalitzant del tractament, oferint una sensació de benestar total.  La sostenibilitat també és un pilar fonamental de Massatges Fonoll. L'empresa utilitza materials ecològics en la decoració i promou pràctiques respectuoses amb el medi ambient. A més, col·labora amb proveïdors locals per garantir que els productes utilitzats siguin de la màxima qualitat i amb una visió sostenible.  Amb el temps, Massatges Fonoll s'ha convertit en una part de la comunitat. Els clients valoren no només els serveis oferts, sinó també el toc personal i la calidesa amb què cada visita els fa sentir especials. Així, Massatges Fonoll ha esdevingut aquell lloc on la gent va per escapar de l'estrès diari i retrobar-se amb ella mateixa—un veritable oasi de relaxació.  La seva popularitat segueix creixent juntament amb la diversificació dels serveis. Al mateix temps, Massatges Fonoll ha desenvolupat noves tècniques i teràpies, responent a les necessitats i demandes dels clients i als avenços més recents en el camp del benestar. Entre aquestes pràctiques s'inclou el massatge en sec, tècniques de fricció i pressió sense l'ús d'olis, i el massatge prenatal destinat a dones embarassades que busquen alleujar tensions i relaxar-se mitjançant el massatge.  Amb els clients entrant i sortint, un ambient de satisfacció i serenitat es fa present a l'espai. La fidelització dels clients genera un efectiu boca-orella; molts nous visitants arriben gràcies a les recomanacions d'amics i familiars que han visitat Massatges Fonoll. La confiança creada entre els professionals del centre i els clients ha esdevingut un dels actius més valuosos per a l'empresa.  A més, Massatges Fonoll és molt més que massatges: organitza tallers i conferències sobre salut i autocura, tractant temes com la importància de la relaxació, l'alimentació saludable i les tècniques de respiració. Aquestes activitats no només són altament informatives, sinó que també ajuden a crear una comunitat basada en el benestar.  Amb el temps, Massatges Fonoll s'ha obert a les noves tecnologies. L'empresa ha dissenyat una plataforma en línia perquè els clients puguin reservar cita fàcilment i accedir a contingut exclusiu sobre tècniques de relaxació i consells d'autocura. Aquesta iniciativa no només facilita la gestió de cites, sinó que també ajuda a mantenir els clients compromesos amb el seu benestar i salut.  La missió de Massatges Fonoll és clara: proporcionar un espai on els clients puguin desconnectar de les seves preocupacions diàries i reconnectar amb ells mateixos. Els professionals del centre continuen formant-se i actualitzant-se en noves tècniques per assegurar-se que cada massatge sigui una experiència única i revitalitzant. La formació contínua és un element essencial, ja que l'empresa es compromet a oferir només el millor als seus clients.  Amb el temps, Massatges Fonoll s'ha convertit en un referent, no només al seu barri, sinó a tota la regió. Les teràpies que ofereix atrauen clients de llocs molt llunyans, que reconeixen de seguida com aquest centre millora les seves vides. La gent descriu Massatges Fonoll com un lloc on el cos i la ment troben l'equilibri necessari per afrontar els desafiaments de la vida.  Massatges Fonoll destaca com un oasi de calma i benestar.  El seu compromís amb la cura, la sostenibilitat i la creació d'una atmosfera acollidora i tranquil·la és el que fa d'aquesta empresa una destinació per aquells que busquen tranquil·litat en aquest món cada cop més accelerat. Amb una visió clara de futur, Massatges Fonoll es compromet a seguir evolucionant, adaptant-se a les demandes dels clients i mantenint-se a l'avantguarda del sector del benestar. L'objectiu és clar: continuar sent un espai on la relaxació, la salut i la felicitat es troben en perfecta harmonia.  ";
+          const output = document.getElementById("output");
+          const words = text.split(" ");
+          let index = 0;
+
+          function showText() {
+              if (index < words.length) {
+                  // Crear un element <span> per a cada paraula
+                  const span = document.createElement("span");
+                  span.textContent = words[index]; // Afegeix només la paraula
+                  span.classList.add("fade-in");
+                  output.appendChild(span);
+
+                  // Afegeix un espai després de la paraula
+                  output.appendChild(document.createTextNode(" "));
+
+                  // Fer que el span es mostri suaument
+                  setTimeout(() => span.classList.add("visible"), 100);
+
+                  index++;
+                  setTimeout(showText, 256); // Temps entre paraules
+              }
+          }
+
+          showText();
+      </script>
     </div>
   </main>
 </body>
