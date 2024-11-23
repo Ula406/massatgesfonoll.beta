@@ -66,6 +66,7 @@ ul li{
   cursor: url('cursors/radio_button_checked_16dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.svg'), auto; /* Utilitza la imatge personalitzada */
   transition: all 0.25s ease;
   z-index: 1; /* Posició inicial del botó */
+  background-image: url(https://static.vecteezy.com/system/resources/previews/003/032/911/original/dark-multicolor-layout-with-wry-lines-vector.jpg);
 }
 
 /* Efecte quan el cursor passa per sobre */
