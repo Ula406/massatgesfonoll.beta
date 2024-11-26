@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="webpage.js" defer></script>
   <link rel="icon" href="imatges/favicon.png" type="image/png">
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(){
+      let nom = document.cookie
+      let pNom = document.getElementById("pNom");
+      pNom.innerHTML = nom;
+    });    
+  </script>
   <style>
     body {
       padding: 20px; /* Evitem que el text toqui exactament les vores */
@@ -130,7 +137,7 @@
                   setTimeout(() => span.classList.add("visible"), 100);
 
                   index++;
-                  setTimeout(showText, 256); // Temps entre paraules
+                  setTimeout(showText, 230); // Temps entre paraules
               }
           }
 

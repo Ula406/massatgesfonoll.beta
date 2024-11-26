@@ -30,6 +30,13 @@
           background-image: url(https://static.vecteezy.com/system/resources/previews/003/032/911/original/dark-multicolor-layout-with-wry-lines-vector.jpg);
         }
     </style>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(){
+        let nom = document.cookie
+        let pNom = document.getElementById("pNom");
+        pNom.innerHTML = nom;
+      });    
+    </script>
 </head>
 <body>
 <nav id="sidebar">
@@ -75,7 +82,7 @@
   <main>
     <h1>Carrega tots els vídeos de YouTube</h1>
 
-    <button id="loadAllVideosButton">Carrega tots els vídeos</button>
+    <button id="loadAllVideosButton">Mostra els vídeos</button>
 
     <div class="video-container">
         <iframe id="iframe1" width="1280" height="588" title="HTML Tutorial - 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
