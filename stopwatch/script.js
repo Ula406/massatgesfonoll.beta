@@ -130,4 +130,4 @@ function setupTemporizador() {
 }
 
 // Inicializar la vista del cronómetro al cargar la página
-showHoraActual();
+showCronometro();
