@@ -106,7 +106,7 @@
         </div>
     </div>
     <div>
-      <a href="javascript:toggleFullScreen()" class="pantalla-completa">
+      <a href="javascript:toggleFullScreen()" class="pantalla-completa" id="pantallaCompletaIcono">
         <svg class="icono" xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="12px" fill="#000000"><path d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/></svg>
       </a>
     </div>
@@ -156,6 +156,15 @@
               }
           }
         }
+          document.addEventListener('fullscreenchange', (event) => {
+              const icono = document.getElementById('pantallaCompletaIcono');
+              if (document.fullscreenElement) {
+                  icono.style.display = 'none';
+              } else {
+                  icono.style.display = 'block';
+              }
+          });
+
     </script>
 </body>
 </html>
