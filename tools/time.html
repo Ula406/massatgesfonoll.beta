@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora Actual</title>
+    <style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+        margin: 0;
+    }
+    .cronometro {
+        background: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+    }
+    .hora {
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="cronometro">
+        <h1>Time in Spain</h1>
+        <div class="hora" id="hora"></div>
+    </div>
+
+    <script>
+        function actualizarHora() {
+            const ahora = new Date();
+            const opciones = { hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Europe/Madrid' };
+            const horaFormateada = ahora.toLocaleTimeString('es-ES', opciones);
+            document.getElementById('hora').innerText = horaFormateada;
+        }
+
+        setInterval(actualizarHora, 1000);
+        actualizarHora();
+    </script>
+</body>
+</html>
