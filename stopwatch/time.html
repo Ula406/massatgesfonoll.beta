@@ -7,6 +7,7 @@
     <link rel="text/javascript" href="webpage.js">
     <link rel="text/javascript" href="script.js">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://ula406.github.io/massatgesfonoll.beta/imatges/favicon.png" type="image/png">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -78,6 +79,21 @@
         .flecha:hover {
             color: #555;
         }
+        .icono {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          fill: #333;
+          cursor: pointer;
+          transition: fill 0.3s ease;
+        }
+
+        .icono:hover {
+            fill: #555;
+        }
+
     </style>
 </head>
 <body>
@@ -89,7 +105,11 @@
             <button class="restart-button" onclick="reiniciar()">Reiniciar</button>
         </div>
     </div>
-
+    <div>
+      <a href="javascript:toggleFullScreen()" class="pantalla-completa">
+        <svg class="icono" xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 -960 960 960" width="12px" fill="#000000"><path d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"/></svg>
+      </a>
+    </div>
     <script>
         let horas = 0;
         let minutos = 0;
@@ -126,6 +146,15 @@
             minutos = 0;
             segundos = 0;
             document.getElementById('tiempo').innerText = '00:00:00';
+        }
+        function toggleFullScreen() {
+          if (!document.fullscreenElement) {
+              document.documentElement.requestFullscreen();
+          } else {
+              if (document.exitFullscreen) {
+                  document.exitFullscreen();
+              }
+          }
         }
     </script>
 </body>
